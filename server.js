@@ -96,7 +96,7 @@ async function generate(command) {
 
   try {
     const response = await fetch(
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=AIzaSyACyxG_Nq5uRhYMA5BSAod_LV-KigoUFhw",
+      "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=AIzaSyCIPoPO6CXjH-7jvJ94jE0y6W_kndfMq9o",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -237,4 +237,5 @@ ${JSON.stringify(command, null, 2)}`
         <p>${error.message}</p>
       </div>`;
   }
+
 }
