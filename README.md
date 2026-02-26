@@ -74,7 +74,8 @@ Tourism-Master/
 ├── forget.html       # Forgot password page
 ├── Log-In.html       # Login page
 ├── script.js         # Main frontend script
-├── server.js         # Backend server 
+├── server.js         # Backend server
+├── gemini.js         # for auth
 ├── style.css         # Main styling file
 ├── gemini.css        # Planner styling
 ├── forgot.css        # Forgot page styling
@@ -134,4 +135,5 @@ User Input → Backend Server → Gemini API → Structured Travel Plan → Fron
 Developed as part of a Hackathon project to demonstrate the practical use of AI in travel automation and smart planning systems.
 
 ---
+
 
