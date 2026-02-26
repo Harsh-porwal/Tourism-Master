@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="travel.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Tourism_Master-plan</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="logo">
+                <div class="image"><i class="ri-navigation-fill"></i></div>
+                <div class="logo-name">
+                    <h1>Tourism master</h1>
+                    <h3>Your Personal AI For Master Your Travel </h3>
+                </div>
+            </div>
+            <div class="nav-options">
+                <a style="color: #9A9592;" href="./index.html">Home</a>
+                <a style="color: #3B9C9C;" href="./plan.html">Plan-Trip</a>
+            </div>
+            <div class="login">
+                <button style="background-color: #3B9C9C; color: #ffffff;"><i class="ri-add-fill"></i>New Plan</button>
+                <!-- <button><a style="text-decoration: none; color: black;" href="./Log-In.html">Sign-In</a></button>
+                <button><a style="text-decoration: none; color: black;" href="./Log-In.html">Log-In</a></button> -->
+                <div class="login2" id="user-section">
+                    <!-- This will be dynamically replaced by JS -->
+                    <button><a style="text-decoration: none; color: black;" href="./Log-In.html">Sign-In</a></button>
+                    <button><a style="text-decoration: none; color: black;" href="./Log-In.html">Log-In</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="page-3">
+            <div class="box"><i class="ri-sparkling-line"></i> AI-powered traveling Planning</div>
+            <h1>Plan Your Perfect Indian Adventure</h1>
+            <p>Tell us your preferences and let AI create a personalized itinerary for you</p>
+            <div class="container">
+                <h2>📍 What's your current location?</h2>
+                <input type="text" id="current_location" placeholder="Enter your live location">
+                <h2>📍 Where do you want to go?</h2>
+                <input type="text" id="destination"
+                    placeholder="Enter state or city name (e.g., Rajasthan, Goa, Mumbai)">
+
+                <div class="range-section">
+                    <h2>₹ Budget Range:</h2>
+                    <input type="number" id="budget" placeholder="Enter your budget amount-">
+                </div>
+
+                <div class="trip-duration">
+                    <h2>📅 Trip Duration:</h2>
+                    <div class="btn-group">
+                        <label for="1">
+                            <div class="btn"><input id="1" name="day" value="1day" type="radio">1d</div>
+                        </label>
+                        <label for="2">
+                            <div class="btn"><input id="2" name="day" value="2day" type="radio">2d</div>
+                        </label>
+                        <label for="3">
+                            <div class="btn"><input id="3" name="day" value="3day" type="radio">3d</div>
+                        </label>
+                        <label for="4">
+                            <div class="btn"><input id="4" name="day" value="4day" type="radio">4d</div>
+                        </label>
+                        <label for="5">
+                            <div class="btn"><input id="5" name="day" value="5day" type="radio">5d</div>
+                        </label>
+                        <label for="6">
+                            <div class="btn"><input id="6" name="day" value="6day" type="radio">6d</div>
+                        </label>
+                        <label for="7">
+                            <div class="btn"><input id="7" name="day" value="7day" type="radio">7d</div>
+                        </label>
+                        <label for="10">
+                            <div class="btn"><input id="10" name="day" value="10day" type="radio">10d</div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="transport">
+                    <h2>Preferred Transportation *</h2>
+                    <div class="btn-group">
+                        <label for="F">
+                            <div class="btn-2"><input id="F" name="transport" value="Flight" type="radio">✈️ Flight
+                            </div>
+                        </label>
+                        <label for="T">
+                            <div class="btn-2"><input id="T" name="transport" value="Train" type="radio">🚆 Train</div>
+                        </label>
+                        <label for="C">
+                            <div class="btn-2"><input id="C" name="transport" value="car" type="radio">🚗 Car</div>
+                        </label>
+                        <label for="B">
+                            <div class="btn-2"><input id="B" name="transport" value="bus" type="radio">🚌 bus</div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="interests">
+                    <h2>What interests you? *</h2>
+                    <div class="btn-group-0">
+                        <label for="g">
+                            <div class="btn-1"><input id="g" name="interests" value="cultural sites" type="checkbox">🏛️
+                                Cultural Sites</div>
+                        </label>
+                        <label for="h">
+                            <div class="btn-1"><input id="h" name="interests" value="Nature & Wildlife"
+                                    type="checkbox">🌿 Nature & Wildlife</div>
+                        </label>
+                        <label for="i">
+                            <div class="btn-1"><input id="i" name="interests" value="Adventure Sports"
+                                    type="checkbox">⛰️ Adventure Sports</div>
+                        </label>
+                        <label for="j">
+                            <div class="btn-1"><input id="j" name="interests" value="Spiritual Places"
+                                    type="checkbox">🕉️ Spiritual Places</div>
+                        </label>
+                        <label for="k">
+                            <div class="btn-1"><input id="k" name="interests" value="Food & Cuisine" type="checkbox">🍲
+                                Food & Cuisine</div>
+                        </label>
+                        <label for="l">
+                            <div class="btn-1"><input id="l" name="interests" value="Beaches" type="checkbox">🏖️
+                                Beaches</div>
+                        </label>
+                        <label for="m">
+                            <div class="btn-1"><input id="m" name="interests" value="Mountains" type="checkbox">🌄
+                                Mountains</div>
+                        </label>
+                        <label for="n">
+                            <div class="btn-1"><input id="n" name="interests" value="Shopping" type="checkbox">🛍️
+                                Shopping</div>
+                        </label>
+                    </div>
+                </div>
+
+                <button class="submit-btn">⭐ Generate My Travel Plan</button>
+            </div>
+        </div>
+        <div class="page4">
+
+        </div>
+    </div>
+
+
+    <script type="module" src="server.js"></script>
+    <!-- <script type="module" src="gemini.js"></script> -->
+</body>
+
+</html>

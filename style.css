@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+body {
+    background-color: #dadada;
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav {
+    background-color: transparent;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.377);
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    backdrop-filter: blur(5px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3B9C9C;
+    color: white;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+.logo-name {
+    text-align: center;
+}
+
+.logo-name h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo-name h3 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.nav-options a {
+    padding: 0px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.login {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+
+.page {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    color: #3B9C9C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #FBEFE9;
+    width: 300px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.bold {
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.page p {
+    width: 70vw;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.budget {
+    margin-top: 30px;
+    padding: 20px 50px;
+    background-color: #3B9C9C;
+    color: white;
+    border-radius: 15px;
+}
+
+.cards {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    height: 100px;
+}
+
+.card-1 {
+    border: 1px solid rgba(164, 164, 164, 0.553);
+    padding: 10px 20px;
+    display: flex;
+    border-radius: 10px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-1 i {
+    font-size: 25px;
+}
+
+.texts {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texts p {
+    font-size: 15px;
+}
+
+.texts h4 {
+    font-size: 20px;
+}
+
+.page-2 {
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cards-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: 0.3s;
+    flex-wrap: wrap;
+}
+
+.card-2 {
+    margin: 50px 0px 0px 0px;
+    border: 2px solid rgba(186, 186, 186, 0.773);
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.card-2 h3 {
+    padding-bottom: 20px;
+}
+
+/* @media screen and (max-width:810px) {} */
+
+@media screen and (max-width:800px) {
+    .card-2 {
+        width: 190px;
+        height: 160px;
+        padding: 0px 10px;
+    }
+
+    .card-2 h2 {
+        font-size: 22px;
+    }
+
+    .card-2 p {
+        font-size: 12px;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bold {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cards,
+    .cards-2 {
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-2 {
+        margin: 0px;
+    }
+
+    .page-2 {
+        padding: 180px 0px;
+    }
+
+    .page-2 h1 {
+        padding: 0px 20px;
+        font-size: 40px;
+        text-align: center;
+    }
+}
+
+/* chatgpt */
+.page-3 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-3 h1 {
+    padding: 10px 0px;
+}
+
+.page-3 p {
+    margin-bottom: 20px;
+}
+
+.container {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    width: 1000px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+input {
+    width: 97%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.range-section {
+    margin-bottom: 20px;
+}
+
+.range-section input {
+    width: 97%;
+}
+
+.trip-duration,
+.transport,
+.interests {
+    margin-bottom: 20px;
+}
+
+.btn-group,
+.btn-group-0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    width: 60px;
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.btn-2 {
+    width: 140px;
+    flex: 1;
+    flex-direction: column;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    background: #fff;
+    transition: 0.3s;
+    height: 100px;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-1 {
+    /* flex: 1; */
+    flex-direction: column;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    background: #fff;
+    transition: 0.3s;
+    height: 50px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover,
+.btn-1:hover,
+.btn-2:hover {
+    background: #3B9C9C;
+    color: #fff;
+    border-color: #3B9C9C;
+}
+
+.interests .btn {
+    flex: none;
+    width: calc(33.33% - 10px);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #3B9C9C;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #1d6969;
+}
+
+
+.budget:hover {
+    background: #1d6969;
+}
+
+/* @media screen and (max-width: 1024px) {
+    .container{
+        width: 890px;
+    }
+    input{
+        width: 97%;
+    }
+    .range-section input {
+        width: 97%;
+    }
+} */
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+        /* flexible */
+    }
+
+    input {
+        width: 97%;
+    }
+
+    .range-section input {
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .btn-2 {
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 340px;
+    }
+
+    input {
+        width: 92%;
+    }
+
+    .range-section input {
+        width: 92%;
+    }
+
+    .btn-1 {
+        width: 130px;
+        height: 100px;
+    }
+
+    .btn-group {
+        gap: 3px;
+        flex-wrap: wrap;
+    }
+
+    .page-3 h1,
+    .page-3 p {
+        text-align: center;
+    }
+}
+
+
+
+.container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.itinerary-day {
+    background: #f9fafb;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+
+.restaurants,
+.tips,
+.attractions,
+.hidden-gems {
+    margin-top: 5px;
+    font-size: 0.95em;
+}
+
+ul {
+    margin: 4px 0 0 20px;
+}
+
+.hotel,
+.transportation {
+    background: #f9fafb;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+.highlight {
+    color: #00796b;
+    font-weight: 500;
+}
+
+.page4 {
+    display: none;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #b2dcdc;
+    margin: auto;
+    width: 85vw;
+}

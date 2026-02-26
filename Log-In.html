@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism-Signup </title>
+    <link rel="shortcut icon" href="/travel.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="gemini.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <div class="image"><i class="ri-navigation-fill"></i></div>
+            <div class="logo-name">
+                <h1>Tourism master</h1>
+                <h3>Your Personal AI For Master Your Travel </h3>
+            </div>
+        </div>
+        <div class="nav-options">
+            <a style="color: #9A9592;" href="./index.html">Home</a>
+            <a style="color: #9A9592;" href="./plan.html">Plan-Trip</a>
+        </div>
+    </div>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <span>or use your email for registration</span>
+                <!-- <input type="text" class="username" id="username"  placeholder="User_Name" /> -->
+                <input type="email" class="email" id="email" placeholder="Email" />
+                <input type="password" class="password" minlength="6" id="password" placeholder="Password" />
+                <span class="character" style ="color: #f13c3c;">*Make your password minimum of 6 character</span>
+                <input type="password" class="passwordn" minlength="6" id="passwordn" placeholder="Confirm your Password" />
+                <span class="character" style ="color: #f13c3c;">*Enter the same as above</span>
+                <p class="password-error" style="color: red;"></p>
+                <button id="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <div class="form-container log-in-container">
+            <form action="#">
+                <h1>Sign In</h1>
+                <span>or use your account</span>
+                <!-- <input type="text" class="username1"  placeholder="User_Name" /> -->
+                <input type="email" class="email1" placeholder="Email" />
+                <input type="password" id="password1" class="password1" placeholder="Password" />
+                <p class="login-error" style="color: red;"></p>
+                <a href="forget.html" id="forgotPassbtn">Forgot your password?</a>
+                
+                <button class="Login">Log In</button>
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="logIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="gemini.js" defer></script>
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const logInButton = document.getElementById('logIn');
+        const container = document.getElementById('container');
+
+        // Add 'right-panel-active' class to 'container' to slide to Sign Up view
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        // Remove 'right-panel-active' class to slide back to Login view
+        logInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+</body>
+
+</html>

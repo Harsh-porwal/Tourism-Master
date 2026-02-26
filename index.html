@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="travel.png" type="image/x-icon">
+    <title>Tourism_Master</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="logo">
+                <div class="image"><i class="ri-navigation-fill"></i></div>
+                <div class="logo-name">
+                    <h1>Tourism master</h1>
+                    <h3>Your Personal AI For Master Your Travel </h3>
+                </div>
+            </div>
+            <div class="nav-options">
+                <a style="color: #3B9C9C;" href="./index.html">Home</a>
+                <a style="color: #9A9592;" href="./plan.html">Plan-Trip</a>
+            </div>
+            <div class="login">
+                <button style="background-color: #3B9C9C; color: #ffffff;"><a
+                        style="color: white;text-decoration: none;" href="./plan.html"><i class="ri-add-fill"></i>New
+                        Plan</a></button>
+                <div class="login2" id="user-section">
+                    <!-- This will be dynamically replaced by JS -->
+                    <button><a style="text-decoration: none; color: black;" href="./Log-In.html">Sign-In</a></button>
+                    <button><a style="text-decoration: none; color: black;" href="./Log-In.html">Log-In</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <div class="box"><i class="ri-sparkling-line"></i> AI-powered traveling Planning</div>
+            <div class="bold">
+                <h1>Explore the </h1>
+                <h1 style="color: #3B9C9C;">Wonders of India </h1>
+            </div>
+            <h1 style="font-size: 60px; font-weight: 700;">with Smart AI Travel</h1>
+            <p class="para">Design your ideal India itinerary with intelligent travel insights. From snow-capped
+                Himalayas to serene Kerala backwaters, get routes and recommendations curated to your interests and
+                budget.Let AI craft your perfect Indian adventure. Discover top destinations, cultural treasures, and
+                offbeat
+                spots personalized just for you</p>
+            <button class="budget"><a style="color: white;text-decoration: none;" href="./plan.html">
+                    <h2>Start Planning Your Trip</h2>
+                    <h4>💸 Plan your perfect getaway — whatever your budget!</h4>
+                </a>
+            </button>
+            <div class="cards">
+                <div class="card-1">
+                    <i class="ri-map-2-line"></i>
+                    <div class="texts">
+                        <h4>Smart Routes</h4>
+                        <p>Optimized itineraries</p>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="pic"><i class="ri-time-line"></i></div>
+                    <div class="texts">
+                        <h4>Time Saving</h4>
+                        <p>Instant planning</p>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="pic"><i class="ri-sparkling-line"></i></div>
+                    <div class="texts">
+                        <h4>AI Powered</h4>
+                        <p>Personalized plans</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-2">
+            <h1>Why Choose Our Tourism master as Travel Planner?</h1>
+            <div class="cards-2">
+                <div class="card-2">
+                    <h3>🎯</h3>
+                    <h2>Smart Planning</h2>
+                    <p>AI-powered recommendations based on your budget and preferences</p>
+                </div>
+                <div class="card-2">
+                    <h3>🗺️</h3>
+                    <h2>Complete Itinerary</h2>
+                    <p>Day-by-day plans with hotels, restaurants, and attractions</p>
+                </div>
+                <div class="card-2">
+                    <h3>💰</h3>
+                    <h2>Budget Friendly</h2>
+                    <p>Plans optimized for your budget range from ₹1,000 to ₹1,00,000</p>
+                </div>
+                <div class="card-2">
+                    <h3>🌸</h3>
+                    <h2>Respective Areas</h2>
+                    <p>Nearby locations must be visited</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
+        import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyACqt6EU_HXMERYlr749oXsLd5oSibgylA",
+            authDomain: "tourism-4521b.firebaseapp.com",
+            projectId: "tourism-4521b",
+            storageBucket: "tourism-4521b.appspot.com",
+            messagingSenderId: "277991998919",
+            appId: "1:277991998919:web:c16e1f63084e748ac285e2",
+            measurementId: "G-9J70ZG3PJ4"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        onAuthStateChanged(auth, (user) => {
+            const userSection = document.querySelector(".login2");
+
+            if (!user) return; // ✅ Do not redirect
+
+            // ✅ Show user info if logged in
+            if (userSection) {
+                userSection.innerHTML = `
+      <div class="user-info">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M14.2558 21.7442L12 24L9.74416 21.7442C5.30941 20.7204 2 16.7443 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12C22 16.7443 18.6906 20.7204 14.2558 21.7442ZM6.02332 15.4163C7.49083 17.6069 9.69511 19 12.1597 19C14.6243 19 16.8286 17.6069 18.2961 15.4163C16.6885 13.9172 14.5312 13 12.1597 13C9.78821 13 7.63095 13.9172 6.02332 15.4163ZM12 11C13.6569 11 15 9.65685 15 8C15 6.34315 13.6569 5 12 5C10.3431 5 9 6.34315 9 8C9 9.65685 10.3431 11 12 11Z"></path></svg>
+        <span>${user.displayName || user.email.split('@')[0]}</span>
+        <button id="logoutBtn">Logout</button>
+      </div>
+    `;
+                document.getElementById("logoutBtn").addEventListener("click", () => {
+                    signOut(auth).then(() => window.location.href = "Log-In.html");
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
